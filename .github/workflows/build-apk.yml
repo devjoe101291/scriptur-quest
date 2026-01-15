@@ -40,11 +40,14 @@ jobs:
       run: |
         npm install @capacitor/cli @capacitor/core @capacitor/android
         
-    - name: Add Android platform
-      run: npx cap add android
+    # Removed: Add Android platform step
+    #- name: Add Android platform
+    #  run: npx cap add android
       
     - name: Sync assets to Android
-      run: npx cap sync android
+      run: |
+        npx cap sync android
+        npx cap copy android
       
     - name: Build Android APK
       run: |
@@ -69,7 +72,7 @@ jobs:
           Automated release of Scriptur Quest Pro APK
           
           Built with:
-          - Node.js 18
+          - Node.js 20
           - Java 17
           - Android SDK
           - Capacitor 8
