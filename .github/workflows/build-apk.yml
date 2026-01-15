@@ -48,6 +48,9 @@ jobs:
       run: |
         npx cap sync android
         npx cap copy android
+
+    - name: Make Gradle wrapper executable
+      run: chmod +x android/gradlew
       
     - name: Build Android APK
       run: |
