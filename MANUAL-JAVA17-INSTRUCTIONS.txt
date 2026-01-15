@@ -1,0 +1,9 @@
+Manual Installation Instructions for Java 17:
+
+1. Visit: https://adoptium.net/temurin/releases/?version=17
+2. Download "OpenJDK 17 (LTS)" for Windows x64
+3. Save the ZIP file to: D:\java17\jdk17.zip
+4. Extract the ZIP file in the same directory
+5. You should have a folder like: D:\java17\jdk-17.x.x+xx-hotspot
+
+Then run these commands in PowerShell:
